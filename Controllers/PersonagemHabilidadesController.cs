@@ -50,19 +50,54 @@ namespace RpgApi.Controllers
             }
         }
 
-        [HttpGet("{id}")]// buscar pelo ID
-        
-        public async Task<IActionResult> GetSingle(int id)
+        [HttpGet("{personagemId}")]
+        public async Task<IActionResult> GetHabilidadesPersonagem(int personagemId)
         {
-            try 
+            try
             {
-            Personagem p = await _context.Personagens
-            .Include(ar => ar.Arma)// inclui na propriedade arma    do objeto p 
-            .Include(ph => ph.PersonagemHabilidades)
-            .ThenInclude(h => h.Habilidade)// inclui na lista de personagemHabilidade de p
-            .FirstOrDefaultAsync(pBusca => pBusca.Id == id);
+                List<PersonagemHabilidade> phLista = new List<PersonagemHabilidade>();
+                phLista = await _context.PersonagemHabilidades
+                .Include(p => p.Personagem)
+                .Include(p => p.Habilidade)
+                .Where(p => p.Personagem.Id == personagemId).ToListAsync();
+                return Ok(phLista);
+            }
+            catch (System.Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
-              return Ok(p);
+        [HttpGet("GetHabilidades")]
+        public async Task<IActionResult> GetHabilidades()
+        {
+            try
+            {
+                List<Habilidade> habilidades = new List<Habilidade>();
+                habilidades = await _context.Habilidades.ToListAsync();
+                return Ok(habilidades);
+            }
+            catch (System.Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost("DeletePersonagemHabilidade")]
+        public async Task<IActionResult> DeleteAsync(PersonagemHabilidade ph)
+        {
+            try
+            {
+                PersonagemHabilidade phRemover = await _context.PersonagemHabilidades
+                .FirstOrDefaultAsync(phBusca => phBusca.PersonagemId == ph.PersonagemId
+                && phBusca.HabilidadeId == ph.HabilidadeId);
+                
+                if (phRemover == null)
+                    throw new System.Exception("Personagem ou Habilidade não encontrados");
+
+                _context.PersonagemHabilidades.Remove(phRemover);
+                int linhasAfetadas = await _context.SaveChangesAsync();
+                return Ok(linhasAfetadas);
             }
             catch (System.Exception ex)
             {

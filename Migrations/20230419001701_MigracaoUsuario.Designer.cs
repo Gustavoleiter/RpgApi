@@ -184,7 +184,7 @@ namespace RpgApi.Migrations
                             Defesa = 13,
                             Forca = 21,
                             Inteligencia = 34,
-                            Nome = "Celeborn",
+                            Nome = "Gustaf",
                             PontosVida = 100
                         },
                         new

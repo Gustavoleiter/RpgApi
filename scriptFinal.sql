@@ -31,7 +31,7 @@ VALUES (1, 1, 23, 17, 33, N'Frodo', 100),
 (3, 3, 21, 18, 35, N'Galadriel', 100),
 (4, 2, 18, 18, 37, N'Gandalf', 100),
 (5, 1, 17, 20, 31, N'Hobbit', 100),
-(6, 3, 13, 21, 34, N'Celeborn', 100),
+(6, 3, 13, 21, 34, N'Gustaf', 100),
 (7, 2, 11, 25, 35, N'Radagast', 100);
 IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Classe', N'Defesa', N'Forca', N'Inteligencia', N'Nome', N'PontosVida') AND [object_id] = OBJECT_ID(N'[Personagens]'))
     SET IDENTITY_INSERT [Personagens] OFF;

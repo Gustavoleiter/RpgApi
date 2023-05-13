@@ -40,7 +40,7 @@ namespace RpgApi.Migrations
                     { 3, 3, 21, 18, 35, "Galadriel", 100 },
                     { 4, 2, 18, 18, 37, "Gandalf", 100 },
                     { 5, 1, 17, 20, 31, "Hobbit", 100 },
-                    { 6, 3, 13, 21, 34, "Celeborn", 100 },
+                    { 6, 3, 13, 21, 34, "Gustaf", 100 },
                     { 7, 2, 11, 25, 35, "Radagast", 100 }
                 });
         }

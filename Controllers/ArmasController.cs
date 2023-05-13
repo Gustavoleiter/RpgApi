@@ -50,6 +50,13 @@ namespace Armas.Controllers
 
                 if (p == null)
                    throw new System.Exception("Não existe personagem com Id informado");
+                
+                
+                 Arma buscaArma = await _context.Armas.FirstOrDefaultAsync(a => a.PersonagemId == novaArma.PersonagemId);
+
+                if (buscaArma != null)
+                    throw new Exception("O Personagem informado já contém uma arma atribuída a ele.");
+
                 await _context.Armas.AddAsync(novaArma);
                 await _context.SaveChangesAsync();
                 return Ok(novaArma.Id);
@@ -66,7 +73,11 @@ namespace Armas.Controllers
         public async Task<IActionResult> Update(Arma novaArma)
         {
             try
-            {
+            {  if (novaArma.Dano == 0)
+                {
+                    throw new System.Exception("O dano da arma não pode ser 0");
+                }
+
 
                 _context.Armas.Update(novaArma);
                 int linhasAfetedas = await _context.SaveChangesAsync();

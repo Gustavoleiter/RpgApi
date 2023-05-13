@@ -93,7 +93,7 @@ INSERT INTO [PersonagemHabilidades] ([HabilidadeId], [PersonagemId])
 VALUES (1, 1),
 (2, 1),
 (2, 2),
-(2, 3),
+(4, 3),
 (3, 4),
 (3, 5),
 (1, 6),
