@@ -153,3 +153,8 @@ C:\Users\User\OneDrive\Área de Trabalho\RpgApi\obj\release\net7.0\refint\RpgApi
 C:\Users\User\OneDrive\Área de Trabalho\RpgApi\obj\release\net7.0\RpgApi.pdb
 C:\Users\User\OneDrive\Área de Trabalho\RpgApi\obj\release\net7.0\RpgApi.genruntimeconfig.cache
 C:\Users\User\OneDrive\Área de Trabalho\RpgApi\obj\release\net7.0\ref\RpgApi.dll
+D:\2ds\gustavoL\dsi\RpgApi\bin\release\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\2ds\gustavoL\dsi\RpgApi\bin\release\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\2ds\gustavoL\dsi\RpgApi\bin\release\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\2ds\gustavoL\dsi\RpgApi\bin\release\net7.0\Newtonsoft.Json.dll
+D:\2ds\gustavoL\dsi\RpgApi\bin\release\net7.0\Newtonsoft.Json.Bson.dll

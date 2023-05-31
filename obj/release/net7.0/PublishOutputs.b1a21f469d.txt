@@ -6,6 +6,9 @@ D:\2ds\gustavoL\dsi\RpgApi\publish\RpgApi.runtimeconfig.json
 D:\2ds\gustavoL\dsi\RpgApi\publish\RpgApi.pdb
 D:\2ds\gustavoL\dsi\RpgApi\publish\Azure.Core.dll
 D:\2ds\gustavoL\dsi\RpgApi\publish\Azure.Identity.dll
+D:\2ds\gustavoL\dsi\RpgApi\publish\Microsoft.AspNetCore.JsonPatch.dll
+D:\2ds\gustavoL\dsi\RpgApi\publish\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\2ds\gustavoL\dsi\RpgApi\publish\Microsoft.AspNetCore.OpenApi.dll
 D:\2ds\gustavoL\dsi\RpgApi\publish\Microsoft.Bcl.AsyncInterfaces.dll
 D:\2ds\gustavoL\dsi\RpgApi\publish\Microsoft.Data.SqlClient.dll
 D:\2ds\gustavoL\dsi\RpgApi\publish\Microsoft.EntityFrameworkCore.dll
@@ -23,6 +26,8 @@ D:\2ds\gustavoL\dsi\RpgApi\publish\Microsoft.IdentityModel.Tokens.dll
 D:\2ds\gustavoL\dsi\RpgApi\publish\Microsoft.OpenApi.dll
 D:\2ds\gustavoL\dsi\RpgApi\publish\Microsoft.SqlServer.Server.dll
 D:\2ds\gustavoL\dsi\RpgApi\publish\Microsoft.Win32.SystemEvents.dll
+D:\2ds\gustavoL\dsi\RpgApi\publish\Newtonsoft.Json.dll
+D:\2ds\gustavoL\dsi\RpgApi\publish\Newtonsoft.Json.Bson.dll
 D:\2ds\gustavoL\dsi\RpgApi\publish\Swashbuckle.AspNetCore.Swagger.dll
 D:\2ds\gustavoL\dsi\RpgApi\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\2ds\gustavoL\dsi\RpgApi\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
